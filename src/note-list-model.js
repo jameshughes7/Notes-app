@@ -10,8 +10,7 @@
   }
 
   List.prototype.store = function(text) {
-    var note = new Note(text);
-    this.notes.push(note);
+    this.notes.push(new Note(text));
   };
 
   exports.List = List;
